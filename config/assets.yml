@@ -1,0 +1,22 @@
+embed_assets: on
+template_function: Handlebars.template
+
+javascripts:
+  core:
+    - public/javascripts/jquery*.js
+    - public/javascripts/underscore*.js
+    - public/javascripts/handlebars*.js
+    - public/javascripts/backbone.js
+  initializers:
+   - public/javascripts/app/config/initializers/**/*.js
+  application:
+  - public/javascripts/app/views/**/*.js
+  - public/javascripts/app/models/**/*.js
+  - public/javascripts/application.js
+  helpers:
+      - public/javascripts/app/helpers/**/*.js
+  templates:
+    - public/javascripts/app/views/templates/**/*.jst
+stylesheets:
+  application:
+    - public/stylesheets/*.css

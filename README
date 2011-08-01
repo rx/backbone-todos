@@ -1,0 +1,20 @@
+== Welcome to Backbone Todo's Example
+
+This was a port of http://documentcloud.github.com/backbone/examples/todos/index.html originally created by Jérôme Gravel-Niquet.
+
+It was intended to setup the basics for the following:
+
+Backbone with a Rails Todo model.
+Jammit for delivering assets and packaging templates.
+Handlebars for view templating
+   Handlebars helpers (for plural)
+
+I attempted to organize all the assets using Jammit the best I could.  You will see the original todo example broken down
+into smaller files in the javascripts/app directory.  I was unable to pull out the AppView, it exists in the application.js file.
+
+If you are new to all this, as I was when I did this little exercise then you should consider running the app and
+taking a look at the source using the browser.  There you will see all the files included by Jammit.
+
+To run it you will need to configure your database.  I set it up for postgres, but all you have to change is the Gemfile to change that.
+There is no database.yml checked in.  You will need to create that add your database gem to the Gemfile.  Run bundle install, db:migrate and rails server.
+Navigate to http://localhost:3000 and witness the goodness.
